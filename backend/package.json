@@ -1,0 +1,28 @@
+{
+  "name": "smartflow-backend",
+  "version": "1.0.0",
+  "description": "Backend API para automação inteligente de processos SmartFlow",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "db:reset": "node -e \"try { require('fs').unlinkSync('./smartflow.db'); console.log('SQLite database reset!'); } catch(e) { console.log('No DB file found to reset.'); }\""
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "ai",
+    "automation",
+    "mysql"
+  ],
+  "author": "Juevan",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  }
+}
