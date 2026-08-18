@@ -1,0 +1,17 @@
+{
+  "name": "smartflow-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SmartFlow AI - Automação Inteligente de Processos",
+  "scripts": {
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "install:all": "npm --prefix frontend install && npm --prefix backend install"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  }
+}
